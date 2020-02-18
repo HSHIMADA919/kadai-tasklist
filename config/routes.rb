@@ -1,12 +1,10 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-  get 'sessions/create'
-  get 'sessions/destroy'
-  get 'users/index'
-  get 'users/show'
-  get 'users/new'
-  get 'users/create'
   root to: 'tasks#index'
+  
+  # get 'users/index'
+  # get 'users/show'
+  get 'users/new'
+  
   
   get 'login', to: 'sessions#new'
   post 'login', to: 'sessions#create'
